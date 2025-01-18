@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: DBT_SCHEMA  # Este es un nombre lógico para referenciar tu fuente
+    schema: DBT_SCHEMA  # El esquema real en Snowflake
+    database: DBT_DATABASE  # La base de datos en Snowflake
+    tables:
+      - name: NEW_RICE  # El nombre d
