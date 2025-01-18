@@ -1,12 +1,13 @@
 {{ config(
-    materialized='table'
-    alias='only_four_elements'
+    materialized='table',
+    alias='TOTAL_PRICES'
 ) }}
 
 SELECT 
-    YEAR,
-    MONTH,
-    PRICE_WHEAT_TON,
-    PRICE_RICE_TON
+    YEAR, 
+    SUM(PRICE_WHEAT_TON) AS TOTAL_PRICE_WHEAT,
+    SUM(PRICE_RICE_TON) AS TOTAL_PRICE_RICE
 FROM 
     DBT_DATABASE.DBT_SCHEMA.NEW_RICE
+GROUP BY YEAR
+ORDER BY YEAR ASC
