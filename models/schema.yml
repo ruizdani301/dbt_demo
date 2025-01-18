@@ -5,4 +5,4 @@ sources:
     schema: DBT_SCHEMA  # El esquema real en Snowflake
     database: DBT_DATABASE  # La base de datos en Snowflake
     tables:
-      - name: NEW_RICE  # El nombre d
+      - name: BECAS  # El nombre d
