@@ -1,4 +1,4 @@
-{{ config(materialized="table", alias="Porcentaje_de_estudiantes") }}
+{{ config(materialized="table", alias="Porcentaje_de_estudiantess") }}
 
 select
     nivel,
