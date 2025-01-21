@@ -1,7 +1,0 @@
-SELECT 
-    YEAR,
-    MONTH,
-    PRICE_WHEAT_TON,
-    PRICE_RICE_TON,
-FROM {{ source('DBT_SCHEMA', 'NEW_RICE') }}
-LIMIT 5
